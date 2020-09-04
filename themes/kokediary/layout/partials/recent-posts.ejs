@@ -1,14 +1,23 @@
 
-<% if (page.posts.length > 0) { %>
-  <div class="posts">
-    <h1>kokediary</h1>
-    <% page.posts.sort('date', -1).limit(10).each(post => { %>
-      <div class="post-item">
-        <a href="<%=url_for(post.path)%>"><%=post.title%></a>
-        <time datetime="<%=post.date.toJSON()%>">
-          <%=date(post.date)%>
-        </time>
+<div class="post_body">
+  <% if (page.posts.length > 0) { %>
+    <div class="posts">
+      <div class="top_title">
+        <h1>kokediary</h1>
       </div>
-    <% }); %>
-  </div>
-<% } %>
+      <% page.posts.sort('date', -1).limit(10).each(post => { %>
+        <div class="post-item l_inner">
+          <a href="<%=url_for(post.path)%>">
+            <article>
+                <h2><%=post.title%></h2>
+                <time datetime="<%=post.date.toJSON()%>"><%=date(post.date)%></time>
+            </article>
+          </a>
+        </div>
+      <% }); %>
+    </div>
+    <div id="paginator">
+      <%-paginator()%>
+    </div>
+  <% } %>
+</div>
