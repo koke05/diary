@@ -13,7 +13,7 @@ timezone: 'japan'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://koke05.com/diary
+url: https://koke05.github.io/diary/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -22,6 +22,7 @@ pretty_urls:
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
+publishDir: docs
 source_dir: source
 public_dir: public
 tag_dir: tags
