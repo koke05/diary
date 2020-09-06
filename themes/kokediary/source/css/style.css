@@ -123,3 +123,10 @@ a{
   list-style: square;
   margin-left: 20px;
 }
+.post_content a{
+  color: #3C71FF;
+}
+.post_content a:hover{
+  opacity: .5;
+  border-bottom: 1px solid #3C71FF;
+}
