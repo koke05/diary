@@ -104,4 +104,6 @@ theme: kokediary
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
+  type: github
+  repo: https://github.com/koke05/diary.git
+  branch: gh-pages
