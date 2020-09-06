@@ -13,7 +13,7 @@ timezone: 'japan'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://github.com/koke05/diary.git
+url: https://koke05.github.io/diary/
 root: /diary/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
